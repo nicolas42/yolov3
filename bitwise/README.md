@@ -25,3 +25,17 @@ then actually train stuff
 Do this if you're stupid and forget to rename the files
 !for f in * ; do mv $f bitwise_$f ; done
 
+
+!git clone https://github.com/andreafabrizi/Dropbox-Uploader.git
+%cd Dropbox-Uploader/
+!chmod +x dropbox_uploader.sh
+!./dropbox_uploader.sh
+<need dropbox authentication key>
+./dropbox_uploader.sh upload src dest
+
+Settings of train - notice yolov3-spp.cfg used
+
+Namespace(accumulate=8, batch_size=8, bucket='', cfg='cfg/yolov3-spp.cfg', data_cfg='data/obj.data', epochs=100, evolve=False, img_size=416, nosave=False, notest=False, num_workers=4, rect=False, resume=False, single_scale=False, transfer=False, var=0, xywh=False)
+Using CUDA device0 _CudaDeviceProperties(name='Tesla T4', total_memory=15079MB)
+
+
