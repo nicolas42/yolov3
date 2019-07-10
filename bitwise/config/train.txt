@@ -595,7 +595,6 @@
 ../coco/images/val2014/bitwise_0743.jpg
 ../coco/images/val2014/bitwise_0744.jpg
 ../coco/images/val2014/bitwise_0745.jpg
-../coco/images/val2014/bitwise_0746.jpg
 ../coco/images/val2014/bitwise_0747.jpg
 ../coco/images/val2014/bitwise_0748.jpg
 ../coco/images/val2014/bitwise_0749.jpg
