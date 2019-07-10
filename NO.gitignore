@@ -18,7 +18,7 @@
 *.cfg
 !cfg/yolov3*.cfg
 
-data/*
+#data/*
 !data/samples/zidane.jpg
 !data/samples/bus.jpg
 !data/coco.names

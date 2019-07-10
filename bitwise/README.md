@@ -8,11 +8,20 @@ Install this (probably don't need to on google colab)
 
 copy all the jpg and txt files from yolov3/bitwise/dataset to ../coco/images/val2014 and ../coco/labels/val2014 respectively, e.g.
 
-    cd yolov3/bitwise/dataset
-    cp *.jpg ../coco/images/val2014
-    cp *.txt ../coco/labels/val2014
-    cd ../../
 
-run the following command
+!    cp yolov3/bitwise/dataset/*.jpg coco/images/val2014
+!    cp yolov3/bitwise/dataset/*.txt coco/labels/val2014
 
-    python3 train.py --data data/obj.data
+copy all the config files
+
+!   cp yolov3/bitwise/config/* yolov3/data
+
+then actually train stuff
+
+%    cd yolov3
+!    python3 train.py --data data/obj.data
+
+
+Do this if you're stupid and forget to rename the files
+!for f in * ; do mv $f bitwise_$f ; done
+
